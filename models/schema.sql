@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS project2_db;
+
+CREATE DATABASE project2_db;
+
+USE project2_db;
+
+CREATE TABLE highscores (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    user VARCHAR(30) NOT NULL,
+    score INT NOT NULL DEFAULT 0
+);
