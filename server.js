@@ -1,5 +1,5 @@
 "use strict";
-const db = require(`./models`);
+// const db = require(`./models`);
 
 const express = require(`express`);
 
@@ -21,8 +21,8 @@ require(`./routes/html-routes`)(app);
 
 // const routes = require('./controller/game_controller.js);
 // app.use(routes);
-db.sequelize.sync().then(() => {
+// db.sequelize.sync().then(() => {
   app.listen(PORT, () =>
     console.log(`Server listening on: http://localhost:${PORT}`)
  );
-});
+// });
